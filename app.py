@@ -7,7 +7,7 @@ from flask import Flask, request, render_template, jsonify
 app = Flask(__name__, template_folder="web_pages")
 
 
-@app.route('/home')
+@app.route('/') #First it was /home
 def home():
     return render_template('medicalRecord.html')
 
